@@ -1,0 +1,42 @@
+.footer {
+    flex-direction: column;
+}
+
+.footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: lightgrey;
+    margin-bottom: 30px;
+}
+
+.footer div:nth-child(2) {
+    color: #6341f0;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.footer icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #9aefd8;
+}
+
+.contact {
+    padding-right: 50px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contact > span {
+    padding-left: 10px;
+}
+
+.footer > img:last-child {
+    margin-bottom: 30px;
+}

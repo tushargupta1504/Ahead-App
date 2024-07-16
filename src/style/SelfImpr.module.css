@@ -1,0 +1,73 @@
+.section {
+    margin: 10vh 10vw;
+    padding: 50px;
+}
+
+.header {
+    width: fit-content;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.header > span {
+    margin-right: 20px;
+}
+
+.header > div {
+    position: relative;
+    rotate: -13deg;
+    top: -10px;
+}
+
+.content {
+    padding-left: 15%;
+    padding-top: 20px;
+    position: relative;
+    height: 420px;
+    overflow-y: scroll;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: left top, left bottom;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.card {
+    align-items: flex-start;
+    position: relative;
+    padding-left: 50px;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.card > div:nth-child(1) {
+    left: 0;
+    margin-right: 10px;
+    margin-top: 2px;
+    outline: 5px solid white;
+    z-index: 1;
+}
+
+.cardContent h4 {
+    padding-bottom: 10px;
+}
+
+.cardContent > div:last-child {
+    max-width: 520px;
+    line-height: 23px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.content > div:last-child {
+    position: absolute;
+    height: 120%;
+    width: 4px;
+    background-color: #6340ee;
+    top: 20px;
+    left: 155px;
+}
+

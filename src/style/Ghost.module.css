@@ -1,0 +1,78 @@
+.ghostBox {
+    flex-direction: column;
+    width: fit-content;
+}
+
+.ghostBox.happy {
+    --primary: #e6a4cd;
+    --dark: #dc72b1;
+}
+
+.ghostBox.smile {
+    --primary: #dbc1f2;
+    --dark: #cbaee1;
+}
+
+.ghostBox.angry {
+    --primary: #e87465;
+    --dark: #d15146;
+}
+
+.ghostBox.surprised {
+    --primary: #b2e5fb;
+    --dark: #7bc4ee;
+}
+
+.ghost {
+    font-size: 10px;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+    width: 5em;
+    background-color: var(--primary);
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5.5em;
+    z-index: 2;
+}
+
+.ghost > img {
+    margin-bottom: 10px;
+}
+
+.ghost.bordered {
+    width: 6.6em;
+    height: 6.5em;
+    border: 8px solid white;
+    border-bottom: 0;
+}
+
+.ghost > div {
+    flex-direction: row;
+}
+
+.ghostBox > div:last-child {
+    position: relative;
+    top: -9px;
+    z-index: 1;
+}
+
+.bottom {
+    width: 16.7px;
+    height: 15px;
+    border-radius: 56%;
+    background-color: var(--dark);
+    position: relative;
+    top: 7px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.bottom::before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    border-radius: 56%;
+    position: absolute;
+    background-color: var(--primary);
+    top: -7px;
+}

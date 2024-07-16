@@ -1,0 +1,94 @@
+.hero {
+    margin: 10px 3vw;
+    margin-top: 75px;
+    background-color: #eeeafd;
+    height: 85vh;
+    border-radius: 30px;
+    padding: 0 5vw;
+    width: auto;
+    overflow: hidden;
+}
+
+.hero > div {
+    width: 50%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heroLeft > div:first-child {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.hero > div:last-child {
+    width: 0%;
+    position: relative;
+}
+
+.hero > div:last-child > * {
+    position: absolute;
+}
+
+.heroLeft {
+    overflow: hidden;
+}
+
+.heroLeft > div:nth-child(2) {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px 0;
+    max-width: 13ch;
+}
+
+.appstore {
+    padding-top: 20px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.appstore > div {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+.appstore > div img {
+    margin-right: 4px;
+}
+
+.heroRight > div:nth-child(1) {
+    height: 400px;
+    width: 400px;
+    border: 5px dashed white;
+    border-radius: 50%;
+    margin-left: 55px;
+}
+
+.floatDiv {
+    position: absolute;
+}
+
+.floatDiv > div {
+    position: relative;
+}
+
+.floatDiv > div:nth-child(1) {
+    top: -36px;
+    left: 230px;
+    rotate: -10deg;
+}
+
+.floatDiv > div:nth-child(2) {
+    top: 166px;
+    left: 410px;
+    scale: 0.8 !important;
+    rotate: 346deg;
+}
+
+.floatDiv > div:nth-child(3) {
+    top: 160px;
+    left: 90px;
+    rotate: 14deg;
+}

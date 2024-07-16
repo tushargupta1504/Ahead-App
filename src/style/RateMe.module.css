@@ -1,0 +1,98 @@
+.section {
+    flex-direction: column;
+    padding: 80px 5vw;
+    margin: 10vw 10vh;
+    border-radius: 30px;
+    background-color: #eef8fe;
+}
+
+.section h1 {
+    font-size: 40px;
+    padding: 15px 0;
+}
+
+.badges {
+    padding: 45px 0;
+    position: relative;
+    align-items: flex-start;
+}
+
+.badges > div {
+    flex-direction: column;
+}
+
+.badges > div > div:last-child {
+    padding: 15px 0;
+    font-size: 13px;
+    text-align: center;
+    width: 300px;
+    line-height: 20px;
+}
+
+.badges > div:last-child {
+    position: absolute;
+    width: 600px;
+    height: 2px;
+    top: 58px;
+    background: repeating-linear-gradient(90deg, #f2d391 96px 18.6%, transparent 100px 20%);
+}
+
+.chatBox {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 100px;
+    padding-right: 0;
+    white-space: nowrap;
+    width: 600px;
+    justify-content: flex-start;
+    position: relative;
+    box-shadow: 4px 4px 9px 0 #00000026;
+}
+
+.chatBox > div {
+    margin: 40px 20px;
+}
+
+.chat {
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    position: relative;
+}
+
+.chat + div {
+    z-index: 1;
+}
+
+.chatBox > div:nth-child(1) > .chat {
+    left: -50px;
+    top: -10px;
+}
+
+.chatBox > div:nth-child(2) > .chat {
+    top: 72px;
+}
+
+.chatBox > div:nth-child(3) > .chat {
+    top: -10px;
+}
+
+.chatBox > div:nth-child(4) > .chat {
+    top: 72px;
+}
+
+.chatBox > div:nth-child(4) {
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.chatBox > div:last-child {
+    position: absolute;
+    width: 504px;
+    height: 2px;
+    top: 70px;
+    background-color: #0000007d;
+    left: 31px;
+}
